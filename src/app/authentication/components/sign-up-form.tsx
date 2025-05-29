@@ -37,7 +37,7 @@ function onSubmit(values: z.infer<typeof registerSchema>) {
   console.log(values);
 }
 
-const SingUpForm = () => {
+const SignUpForm = () => {
   const form = useForm<z.infer<typeof registerSchema>>({
     resolver: zodResolver(registerSchema),
     defaultValues: {
@@ -111,4 +111,4 @@ const SingUpForm = () => {
   );
 };
 
-export default SingUpForm;
+export default SignUpForm;

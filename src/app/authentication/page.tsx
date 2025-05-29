@@ -10,7 +10,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import SingUpForm from "./components/sing-up-form";
+import SingUpForm from "./components/sign-up-form";
+import SingInForm from "./components/sign-in-form";
 
 const AuthenticationPage = () => {
   return (
@@ -21,16 +22,7 @@ const AuthenticationPage = () => {
           <TabsTrigger value="register">Criar conta</TabsTrigger>
         </TabsList>
         <TabsContent value="login">
-          <Card>
-            <CardHeader>
-              <CardTitle>Login</CardTitle>
-              <CardDescription>Faça o login para continuar.</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-2"></CardContent>
-            <CardFooter>
-              <Button>Entrar</Button>
-            </CardFooter>
-          </Card>
+          <SingInForm />
         </TabsContent>
         <TabsContent value="register">
           <SingUpForm />
